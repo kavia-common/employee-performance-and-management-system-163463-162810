@@ -46,8 +46,3 @@ def create_app(config_object=DevelopmentConfig):
     register_cli(app)
 
     return app
-
-
-# Create default app for scripts like generate_openapi.py and run.py
-app = create_app()
-api = Api(app)
